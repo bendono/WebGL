@@ -1,0 +1,35 @@
+declare function _argumentsToArray(args: any): any;
+declare function radians(degrees: number): number;
+declare function vec2(arg1?: number, arg2?: number): number[];
+declare function vec3(arg1?: number, arg2?: number, arg3?: number): number[];
+declare function vec4(arg1?: number, arg2?: number, arg3?: number, arg4?: number): number[];
+declare function mat2(): any;
+declare function mat3(): any;
+declare function mat4(arg1?: any, arg2?: any, arg3?: any, arg4?: any): any;
+declare function equal(u: any, v: any): boolean;
+declare function add(u: any, v: any): any;
+declare function subtract(u: any, v: any): any;
+declare function mult(u: any, v: any): any;
+declare function translate(x: any, y: any, z: any): any;
+declare function rotate(angle: any, axis: any): any;
+declare function lookAt(eye: any, at: any, up: any): any;
+declare function ortho(left: any, right: any, bottom: any, top: any, near: any, far: any): any;
+declare function perspective(fovy: any, aspect: any, near: any, far: any): any;
+declare function transpose(m: any): any;
+declare function dot(u: any, v: any): number;
+declare function negate(u: any): any[];
+declare function cross(u: any, v: any): number[];
+declare function _length(u: any): number;
+declare function normalize(u: any, excludeLastComponent?: any): any;
+declare function mix(u: number[], v: number[], s: number): number[];
+declare function scale(s: any, u: any): any[];
+declare function flatten(v: any): Float32Array;
+declare var sizeof:
+{
+    'vec2': number;
+    'vec3': number;
+    'vec4': number;
+    'mat2': number;
+    'mat3': number;
+    'mat4': number;
+};
